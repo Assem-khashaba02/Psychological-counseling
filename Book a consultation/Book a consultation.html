@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج تسجيل استشارة نفسية</title>
+    <style>
+        body {
+            
+            background-color: rgb(153, 153, 153);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        
+        .container {
+            color: antiquewhite;
+            background-color: #333;
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 25px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #ffffff;
+        }
+        
+        label {
+  display: inline;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+  transform: scale(1.2); /* زيادة حجم الزر */
+}
+
+input[type="radio"]:checked + label {
+  color: rgb(33, 221, 33); /* تغيير لون النص عند اختيار الخيار */
+}
+
+input[type="radio"]:focus {
+  outline: 2px solid rgb(0, 0, 0); /* إضافة إطار تحديد عند التركيز على الخيار */
+}
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="file"],
+        input[type="data"],
+        select {
+            background-color: hsla(182, 81%, 44%, 0.671);
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #000000;
+            border-radius: 9px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            outline: none;
+        }
+        
+        select {
+            height: 40px;
+        }
+        
+        input[type="submit"] {
+            background-color: #000000;
+            color: #7bff00;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #66ff00;
+            color: #000000;
+        }
+        .col-1 h1{
+          align-items: center;
+          background-color: rgb(0, 0, 0);
+          color: aqua;
+        }
+        div span{
+          align-items: center;
+          color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>استشارة نفسية - نموذج التسجيل</h1>
+        <form action="https://formspree.io/f/xknlyyyd" method="post" method="POST">
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريدك الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone"> :رقم الهاتف للتواصل</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            
+            
+            <label for="day">اليوم المتاح:</label>
+            <select id="day" name="day" required>
+                <option value="Sunday">الأحد</option>
+                <option value="Thursday">الخميس</option>
+            </select>
+            
+            <label for="time">الساعة المتاحة:</label>
+            <select id="time" name="time" required>
+                <option value="19:00">7:00 مساءً</option>
+                <option value="20:00">8:00 مساءً</option>
+                <option value="21:00">9:00 مساءً</option>
+                <option value="22:00">10:00 مساءً</option>
+                <option value="23:00">11:00 مساءً</option>
+            </select>
+            
+            <label for="day">الديانه</label>
+            <select id="day" name="day" required>
+                <option value="مسلم">مسلم</option>
+                <option value="مسيحي">مسيحي</option>
+            
+            </select>
+            <label for="day">النوع</label>
+            <select id="day" name="day" required>
+                <option value="ذكر">ذكر </option>
+                <option value="انثي">انثي</option>
+            </select>
+           
+
+
+            <input type="submit" value="تأكيد الإرسال">
+       </form>
+       
+    </div>
+
+</body>
+</html>
